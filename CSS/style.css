@@ -15,11 +15,17 @@ body{
     justify-content: center;
     flex-direction: column;
     color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 
 }
 
 canvas{
     background-color: #111 ;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 
 .score{
@@ -94,17 +100,19 @@ canvas{
 .level--value{
     font-weight: 700;
 }
+.game-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .mobile-controls {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    z-index: 5;
 }
 
 .hidden {
