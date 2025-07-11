@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="Favicoin" href="./Favicoin/icons8-snake-48.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="score"> Score: <span class="score--value"> 00 </span>
+    <div class="level">Nivel: <span class="level--value">1</span></div>
+    </div>
+  
+<div class="menu-screen">
+    <span class="game-over">game over</span>
+    <span class="final-score">score <span>00</span></span>
+
+    <button class="btn-play">
+        <span class="material-symbols-outlined">play_circle</span>
+        Jogar novamente
+    </button>
+</div>
+
+<div class="mobile-controls">
+    <button data-direction="up" class="btn-dir">▲</button>
+    <div>
+        <button data-direction="left" class="btn-dir">◀</button>
+        <button data-direction="down" class="btn-dir">▼</button>
+        <button data-direction="right" class="btn-dir">▶</button>
+
+    </div>
+</div>
+    <canvas width="600" height="600"></canvas>
+
+    <script src="./JS/script.js"></script> 
+</body>
+</html>
